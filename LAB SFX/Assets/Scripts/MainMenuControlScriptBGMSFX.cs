@@ -45,6 +45,8 @@ public class MainMenuControlScriptBGMSFX : MonoBehaviour, IPointerEnterHandler
     public void StartButtonClick(Button button)
     {
         SceneManager.LoadScene("SceneStageSelect");
+        if (SingletonSoundManager.Instance.BGMSource.isPlaying)
+            SingletonSoundManager.Instance.BGMSource.Stop();
     }
     public void OptionsButtonClick(Button button)
     {
@@ -57,6 +59,8 @@ public class MainMenuControlScriptBGMSFX : MonoBehaviour, IPointerEnterHandler
     public void HelpButtonClick(Button button)
     {
         SceneManager.LoadScene("SceneHelp");
+        if (SingletonSoundManager.Instance.BGMSource.isPlaying)
+            SingletonSoundManager.Instance.BGMSource.Stop();
     }
     public void SoundTestingButtonClick(Button button)
     {

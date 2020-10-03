@@ -8,7 +8,7 @@ public class Winning : MonoBehaviour
     void OnTriggerEnter(Collider col){
     if(col.gameObject.tag == "Player")
      {
-         SceneManager.LoadScene("SceneMainMenu");
+         SceneManager.LoadScene("SceneStage2");
      }
     }
   

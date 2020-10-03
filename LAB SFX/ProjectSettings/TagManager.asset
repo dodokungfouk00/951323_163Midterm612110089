@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Bullseyes
   - Fire
+  - Green
+  - Item
   layers:
   - Default
   - TransparentFX

@@ -10,6 +10,8 @@ public class ReturnToMenu : MonoBehaviour
        
         //SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().name);
         SceneManager.LoadScene("SceneMainMenu");
+       if (!SingletonSoundManager.Instance.BGMSource.isPlaying)
+            SingletonSoundManager.Instance.BGMSource.Play();
     }
 
     
