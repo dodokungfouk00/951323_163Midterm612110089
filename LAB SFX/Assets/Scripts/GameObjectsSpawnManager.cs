@@ -33,7 +33,7 @@ public class GameObjectsSpawnManager : MonoBehaviour
         Destroy(go, 900);
 
         float nextSpawnTime = Random.Range(0.2f, 1);
-        Invoke("SpawnItem", 5);
+        Invoke("SpawnItem", 0.1f);
     }
 
     void SpawnObstacle(){
@@ -43,7 +43,7 @@ public class GameObjectsSpawnManager : MonoBehaviour
         Destroy(go, 900);
 
 
-        float nextSpawnTime = Random.Range(0.2f, 4);
+        float nextSpawnTime = Random.Range(0.2f, 0.3f);
         Invoke("SpawnObstacle", nextSpawnTime);
     }
 }

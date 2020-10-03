@@ -9,6 +9,8 @@ public class Winning2 : MonoBehaviour
     if(col.gameObject.tag == "Player")
      {
          SceneManager.LoadScene("SceneMainMenu");
+         if (!SingletonSoundManager.Instance.BGMSource.isPlaying)
+            SingletonSoundManager.Instance.BGMSource.Play();
      }
     }
   
